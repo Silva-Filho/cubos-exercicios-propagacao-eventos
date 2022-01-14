@@ -8,6 +8,7 @@ const linkModal = document.querySelector(".modal a");
 const abrirModal = src => {
     imagemModal.setAttribute("src", src);
     modal.style.display = "flex";
+    linkModal.setAttribute("href", src);
 };
 
 const selecionarImagem = event => abrirModal(event.target.src)
@@ -20,7 +21,7 @@ const sairModal = () => modal.style.display = "none";
 
 modal.addEventListener("click", sairModal);
 
-const abrirImagemNoutraPagina = () => linkModal.setAttribute("href", imagemModal.src)
+const abrirImagemNoutraPagina = (event) => event.stopPropagation();
 
 imagemModal.addEventListener("click", abrirImagemNoutraPagina);
 
