@@ -2,8 +2,6 @@ const imagens = document.querySelectorAll(".imagens img");
 const imagemModal = document.querySelector(".modal img");
 const modal = document.querySelector(".modal");
 const linkModal = document.querySelector(".modal a");
-/* console.log(imagemModal); */
-/* console.log(imagens); */
 
 const abrirModal = src => {
     imagemModal.setAttribute("src", src);
@@ -24,5 +22,3 @@ modal.addEventListener("click", sairModal);
 const abrirImagemNoutraPagina = (event) => event.stopPropagation();
 
 imagemModal.addEventListener("click", abrirImagemNoutraPagina);
-
-/* console.log(imagemModal); */
