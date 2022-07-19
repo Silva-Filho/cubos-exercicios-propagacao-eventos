@@ -3,7 +3,7 @@ const inputSenha = document.querySelector("#senha");
 
 const mudarApresentacaoSenha = (event) => {
     event.preventDefault();
-    // talvez usar ternário?
+    
     const olhoFechado = "assets/olho-fechado.svg";
     const olhoAberto = "assets/olho-aberto.svg";
 
