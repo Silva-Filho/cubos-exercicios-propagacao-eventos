@@ -29,23 +29,24 @@ body {
 
 .container img {
     position: fixed;
-    bottom: 50px;
-    /* left: 1230px; */
-    left: 430px;
+    bottom: 2rem;
+    right: 6.25rem;
     width: 130px;
     height: 130px;
-    background-color: #1291D8;
-    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.2s;
 }
 
+.container img:hover {
+    opacity: 0.7;
+}
 
 .modal {
     width: 450px;
     padding: 40px 45px 100px;
     position: fixed;
-    bottom: 200px;
-    /* left: 1230px; */
-    left: 250px;
+    bottom: 12.5rem;
+    right: 3.125rem;
     font-family: 'Open Sans', sans-serif;
     background: #FFF;
     box-shadow: 0px 4px 24px rgba(17, 145, 216, 0.12);
